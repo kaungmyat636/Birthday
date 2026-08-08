@@ -1,1 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday — Babe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <h1>Happy Birthday, <span id="her-name">Babe</span> 🎉</h1>
+      <div class="controls">
+        <button id="confettiBtn">Celebrate ✨</button>
+      </div>
+    </header>
 
+    <main>
+      <!-- Hero with typewriter wish -->
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="avatar-wrap">
+            <img id="mainAvatar" src="images/photo1.jpg" alt="photo" />
+            <div class="heart-button" id="heartBtn">❤️</div>
+          </div>
+          <div class="wish">
+            <div id="typewriter"></div>
+            <div class="sub">Swipe / click photos to see more — tap the heart for floating hearts.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TikTok-style vertical slides for wishes -->
+      <section class="vertical-slides" id="slides">
+        <div class="slide">Wish 1: May your day be full of laughter and love ❤️</div>
+        <div class="slide">Wish 2: Keep shining like you always do ✨</div>
+        <div class="slide">Wish 3: Cheers to more adventures together 🥂</div>
+      </section>
+
+      <!-- Photo gallery (click thumbnails to change main) -->
+      <section class="gallery">
+        <div class="main-photo" id="photoFrame">
+          <img id="mainPhoto" src="images/photo1.jpg" alt="main" />
+        </div>
+        <div class="thumbs" id="thumbs">
+          <img class="thumb" src="images/photo1.jpg" data-large="images/photo1.jpg" alt="t1" />
+          <img class="thumb" src="images/photo2.jpg" data-large="images/photo2.jpg" alt="t2" />
+          <img class="thumb" src="images/photo3.jpg" data-large="images/photo3.jpg" alt="t3" />
+          <img class="thumb" src="images/photo4.jpg" data-large="images/photo4.jpg" alt="t4" />
+          <img class="thumb" src="images/photo5.jpg" data-large="images/photo5.jpg" alt="t5" />
+          <img class="thumb" src="images/photo6.jpg" data-large="images/photo6.jpg" alt="t6" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>Made with ❤ — customize images/NAME and share the URL.</small>
+    </footer>
+  </div>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
